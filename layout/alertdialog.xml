@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15sp">
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="200sp"
+        android:id="@+id/alertImage"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/wallet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertText"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="30sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Hey , You have received a Referral reward worth"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Accept"
+    android:background="@drawable/buttons"
+    android:textSize="20dp"
+    android:id="@+id/btn_accept"
+    android:layout_marginTop="20dp"
+    android:textColor="@android:color/white"
+    android:layout_marginStart="30sp"
+    android:layout_marginEnd="30sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/buttons2"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"/>
+</LinearLayout>

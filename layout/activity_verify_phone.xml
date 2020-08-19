@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitec"
+    android:orientation="vertical"
+    tools:context=".LoginSignup.VerifyPhoneActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:id="@+id/logo"
+        android:src="@drawable/cart"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Please Enter The Code Sent To Continue"/>
+
+
+    <EditText
+        android:id="@+id/ed_code"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="20sp"
+        android:digits="0123456789"
+        android:hint="Enter Code"
+        android:maxLength="6" />
+
+
+    <Button
+        android:layout_marginLeft="130sp"
+        android:layout_marginTop="30sp"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:padding="5sp"
+        android:textColor="@color/whitec"
+        android:id="@+id/btn_signin"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="150sp"/>
+</LinearLayout>

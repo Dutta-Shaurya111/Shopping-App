@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2690B3</color>
+    <color name="colorPrimaryDark">#2690B3</color>
+    <color name="colorPrimar">#B01EC0</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="whitec">#FFFFFF</color>
+    <color name="blue_dark">#D83B7A7A</color>
+    <color name="blue_bright">#D816FFEF</color>
+    <color name="pinklight">#FDC5DF</color>
+    <color name="purple_light">#B5E2E0FF</color>
+
+    <!--- Colours For OnBoarding View-Pager
+
+    !-->
+    <color name="onboard_dark">#7592B4</color>
+    <color name="onboard_black">#26537E</color>
+    <color name="onboard_gray">#cccccc</color>
+
+
+</resources>

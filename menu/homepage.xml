@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Cart"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="Sort By Price"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        android:title=""
+        app:actionViewClass="androidx.appcompat.widget.AppCompatSpinner"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:title="Privacy Policy"/>
+
+    <item
+        android:id="@+id/terms_of_use"
+        android:title="Terms Of Use"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="About Us"/>
+
+    <item
+        android:id="@+id/feedback"
+        android:title="Give Feedback"/>
+</menu>

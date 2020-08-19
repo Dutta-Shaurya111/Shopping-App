@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="30dp"
+       android:id="@+id/cancellation_heading"
+       android:textStyle="bold"
+       android:textColor="@color/colorPrimary"
+       android:textAlignment="center"
+       android:text="Product Cancel Form"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="250sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5sp"
+        android:id="@+id/reason_tv"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="Please Specify Reason For Cancel"/>
+
+    <Spinner
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10sp"
+        android:layout_marginTop="10sp"
+        android:background="@color/purple_light"
+        android:layout_marginStart="5sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/autotv"
+        android:hint="Please Specify Reason for Cancellation"/>
+</LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Specify Product Size You Want"
+        android:background="@drawable/input_design"
+        android:textSize="20dp"
+        android:padding="7sp"
+        android:visibility="gone"
+        android:id="@+id/ed_reason_cancel"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:hint="Specify your Reason"
+        android:background="@drawable/input_design"
+        android:textSize="20dp"
+        android:padding="7sp"
+        android:visibility="gone"
+        android:id="@+id/ed_reason_user"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cancel Shipment"
+    android:background="@drawable/buttons"
+    android:textSize="20dp"
+    android:id="@+id/btn_cancel_shipment"
+    android:layout_marginTop="40dp"
+    android:textColor="@android:color/white"
+    android:layout_marginStart="30sp"
+    android:layout_marginEnd="30sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/btn_exit"
+        android:background="@drawable/buttons2"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"/>
+</LinearLayout>

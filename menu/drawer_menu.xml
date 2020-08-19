@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="All Products"
+            android:iconTint="@color/blue_dark"/>
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Cart"
+            android:iconTint="@color/whitec"/>
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/order"
+            android:title="My Orders"
+            android:iconTint="@color/whitec"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/categories"
+            android:title="Categories"
+            android:iconTint="@color/whitec">
+
+        </item>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings"
+            android:iconTint="@color/whitec"/>
+
+        <item
+            android:id="@+id/nav_my_wallet"
+            android:icon="@drawable/wallet"
+            android:title="My Wallet" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_referandearn"
+            android:icon="@drawable/support"
+            android:title="@string/referandearn" />
+
+        <item
+            android:id="@+id/nav_cancel_order"
+            android:icon="@drawable/cancel"
+            android:title="Cancel Order" />
+
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/support"
+                android:title="Help" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"
+                android:iconTint="@color/whitec"/>
+
+        </menu>
+    </item>
+    </group>
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NavigationDrawer.ImageActive">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3"
+        android:background="@drawable/input_design"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textAlignment="center"
+        android:text="Add Multiple Product Images "/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:layout_marginTop="100sp"
+        android:id="@+id/choose"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:text="Upload"
+        android:id="@+id/upload"/>
+
+</LinearLayout>

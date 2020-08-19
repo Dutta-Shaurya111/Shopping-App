@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payments.ReferralActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/create_link"
+        android:text="Create Link"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/refer_code"
+        android:text="Your Refer Code is not Yet Generated"
+        android:layout_below="@id/create_link"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/refer_link"
+        android:visibility="gone"
+        android:layout_below="@id/refer_code"
+        android:text="Refer Link"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/share_link"
+        android:text="Share Link"
+        android:layout_below="@id/refer_link"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

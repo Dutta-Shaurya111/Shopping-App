@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payments.PaymentSDK">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:textColor="@color/whitec"
+        android:textAlignment="center"
+        android:text="Transaction Status"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/transaction_status"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/buttons"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Transaction Id"
+        android:textSize="20dp"
+        android:layout_below="@id/transaction_status"
+        android:id="@+id/transaction_id"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Amount"
+        android:textSize="20dp"
+        android:layout_below="@id/transaction_id"
+        android:id="@+id/transaction_payment_amount"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Receiver Name"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/transaction_payment_amount"
+        android:id="@+id/transaction_payment_receiver_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@id/transaction_payment_receiver_name"
+        android:text="UPI ID"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/transaction_payment_UPI_ID"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Note"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/transaction_payment_UPI_ID"
+        android:id="@+id/transaction_payment_note"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+</RelativeLayout>

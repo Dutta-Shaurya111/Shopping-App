@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginEnd="10sp"
+    android:layout_marginStart="10sp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Review This Product"
+        android:id="@+id/review_heading"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/review_write_review"
+        android:layout_marginEnd="15dp"
+        android:maxLines="5"
+        android:minLines="2"
+        android:layout_below="@id/review_heading"
+        android:hint="Write your review"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout1"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/review_write_review"
+        android:orientation="horizontal">
+
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_write_review"
+            android:numStars="5"
+            android:isIndicator="false"
+            android:progressBackgroundTint="@android:color/darker_gray"
+            android:progressTint="@color/colorPrimary"
+            android:rating="1.5"
+            android:stepSize=".5" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:id="@+id/review_submit_review"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/buttons"
+        android:layout_below="@id/linear_layout1"
+        android:text="Submit review"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Reviews"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/reviews_all_reviews_heading"
+        android:layout_below="@id/review_submit_review"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        android:id="@+id/review_recycler"
+        android:layout_below="@id/reviews_all_reviews_heading">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

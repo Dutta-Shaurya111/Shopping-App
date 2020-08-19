@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".firebase.CategoriesRecycler">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/categories_toolbar_"
+        android:elevation="3dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:id="@+id/img_toolbar"
+                android:src="@drawable/wallet"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="5sp"
+                android:id="@+id/text_choose_toolbar"
+                android:layout_marginLeft="5sp"
+                android:gravity="center"
+                android:textColor="@color/whitec"
+                android:text="Choose Sub-Category"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginLeft="8sp"
+                android:background="@android:color/white"
+                android:id="@+id/spinnerr"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/categories_search_linear"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:layout_width="315sp"
+            android:layout_height="50sp"
+            android:paddingLeft="10sp"
+            android:textAlignment="textStart"
+            android:layout_marginTop="5sp"
+            android:padding="5sp"
+            android:id="@+id/categories_auto_search"
+            android:background="@drawable/input_design"
+            android:hint="Enter Something To Search" />
+
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/categories_search_btn"
+            android:background="@drawable/ic_search_black_24dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/whitec"
+        android:id="@+id/frame"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_categories_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5sp"
+           />
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:elevation="12dp"
+        app:tabIndicatorHeight="2.5dp"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        android:background="@android:color/white"
+        android:id="@+id/tab_layout_category">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundTint="@color/colorPrimary"
+            android:icon="@drawable/ic_sort_black_24dp"
+            android:text="Sort By price"/>
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go to cart"
+            android:icon="@drawable/cart"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>

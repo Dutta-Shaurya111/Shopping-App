@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitec"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminAddNewProduct">
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/select_product_image" />
+
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/input_design"
+        android:hint="Product Name"
+        android:inputType="textMultiLine"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_Description"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Product Description"
+        android:inputType="textMultiLine"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/input_design"
+        android:hint="Product Sub-Category Here"
+        android:inputType="textMultiLine"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Product Price"
+        android:inputType="number"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_mrp"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Product MRP"
+        android:inputType="number"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/material_type"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Material Type"
+        android:inputType="text"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Product Type"
+        android:inputType="text"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_style"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Style"
+        android:inputType="text"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_design"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Design"
+        android:inputType="text"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_size"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Product Size"
+        android:inputType="text"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/product_color"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/input_design"
+        android:hint="Product Colors Available"
+        android:inputType="text"
+        android:padding="20sp" />
+
+    <Button
+        android:id="@+id/add_new_product"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/buttons"
+        android:padding="10sp"
+        android:layout_marginBottom="30sp"
+        android:text="Add New Product"
+        android:textColor="@color/whitec" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_new_product"
+        android:layout_marginTop="30sp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/whitec"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        android:id="@+id/tab_layout2"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:id="@+id/viewpager_add_new"
+        android:layout_below="@id/tab_layout2">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
+
+
+
+</ScrollView>

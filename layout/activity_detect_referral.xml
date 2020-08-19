@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payments.DetectReferral">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/welcome_link"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/create_link_btn"
+        android:text="Create Link"
+        android:layout_below="@id/welcome_link"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/invite_code_ed"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="30sp"
+        android:hint="Enter Invite Code"
+        android:layout_below="@id/create_link_btn"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@drawable/input_design"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/apply"
+        android:text="Apply Code"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="100sp"
+        android:layout_marginEnd="30sp"
+        android:layout_below="@id/invite_code_ed"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</RelativeLayout>

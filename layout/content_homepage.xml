@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NavigationDrawer.HomepageActivity"
+    tools:showIn="@layout/app_bar_homepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/search_linear"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal">
+    <AutoCompleteTextView
+        android:layout_width="315sp"
+        android:layout_height="50sp"
+        android:padding="5sp"
+        android:paddingLeft="10sp"
+        android:layout_marginTop="5sp"
+        android:id="@+id/auto_search"
+        android:background="@drawable/input_design"
+        android:hint="Enter Something To Search" />
+
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/search_btn"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/ic_search_black_24dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_view_products"
+        android:scrollbars="vertical"
+        android:layout_below="@id/search_linear"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<ProgressBar
+    android:layout_width="30sp"
+    android:layout_height="30sp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/progress_bar"
+    android:visibility="gone"
+    android:layout_below="@id/recycler_view_products"/>
+
+</RelativeLayout>

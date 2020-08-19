@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="15dp"
+    android:layout_margin="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10sp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:id="@+id/cart_product_name"
+            android:textSize="15dp"
+            android:layout_marginLeft="5sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Quantity"
+            android:id="@+id/cart_product_quantity"
+            android:layout_alignParentEnd="true"
+            android:textSize="15dp"
+            android:layout_marginRight="5sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/cart_product_name"
+            android:id="@+id/cart_product_price"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            android:layout_below="@id/cart_product_price"
+            android:id="@+id/cart_product_image"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

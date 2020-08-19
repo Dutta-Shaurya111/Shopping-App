@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/trans_relative1"
+        tools:context=".Payments.PaymentSDK">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Using COD(Cash On Delivery)"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/payment_cod_option"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="45sp"
+            android:padding="10sp"
+            android:background="@drawable/buttons"/>
+
+
+    </RelativeLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/trans_relative2"
+    tools:context=".Payments.PaymentSDK">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Amount"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:id="@+id/payment_amount"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:textAlignment="center"
+        android:text="Receiver Name"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/payment_amount"
+        android:id="@+id/payment_receiver_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:textAlignment="center"
+        android:layout_below="@id/payment_receiver_name"
+        android:text="UPI ID"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/payment_UPI_ID"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Note"
+        android:layout_below="@id/payment_UPI_ID"
+        android:id="@+id/payment_note"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:background="@drawable/input_design"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:text="Pay By UPI"
+        android:layout_below="@id/payment_note"
+        android:id="@+id/payment_send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45sp"
+        android:padding="10sp"
+        android:textSize="25sp"
+        android:textColor="@color/whitec"
+        android:background="@drawable/buttons"/>
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>

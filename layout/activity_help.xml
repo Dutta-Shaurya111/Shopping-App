@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firebase.HelpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/help_relative"
+        android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="18sp"
+                android:padding="10sp"
+                android:text="Contact Us At: 987-738-8119"
+                android:layout_weight="1"
+                android:id="@+id/help_contact_number"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:background="@drawable/buttondesign"
+                android:textColor="@android:color/black"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mail Us At: shauryadutta111@gmail.com"
+                android:layout_below="@id/help_contact_number"
+                android:padding="10sp"
+                android:layout_marginEnd="18sp"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/buttondesign"
+                android:id="@+id/help_email_add"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginEnd="20dp"
+            android:text="Call Timings are : 10:00 To 18:00"
+            android:layout_marginTop="10sp"
+            android:textAlignment="center"
+            android:layout_below="@id/help_email_add"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:id="@+id/help_call_heading"
+            android:textStyle="italic"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Beware Of Fraudulent Calls..Immediately Rport Us If anyone asks for your bank-Details/Otp"
+            android:layout_marginTop="10sp"
+            android:textAlignment="center"
+            android:id="@+id/help_fraud_heading"
+            android:layout_below="@id/help_call_heading"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginStart="20dp"/>
+
+
+        
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help_relative"
+        android:layout_marginTop="30sp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/whitec"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        android:id="@+id/help_tab_layout"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/help_viewpager"
+        android:layout_below="@id/help_tab_layout">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout></ScrollView>

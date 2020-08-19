@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">shopping</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_navigatr">navigatr</string>
+    <string name="title_activity_sample">sample</string>
+    <string name="title_activity_ssample">ssample</string>
+    <string name="title_activity_homepage">HomepageActivity</string>
+    <string name="title_activity_add_new_categories">AddNewCategories</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="referandearn">Refer And Earn</string>
+
+    <string-array name="reasons">
+
+        <item>Select</item>
+
+        <item>Company Shipped Wrong Product or Size</item>
+
+        <item>Damaged Product Received</item>
+
+        <item>Product Did Not Meet Expectations</item>
+
+        <item>Product Does Not Match Description</item>
+
+        <item>Some Other Reason</item>
+
+    </string-array>
+
+    <string-array name="filtering">
+        <item>Filter By Price</item>
+        <item>See All Products</item>
+        <item>₹0 - ₹500</item>
+        <item>₹501 - ₹1000</item>
+        <item>₹1001 - ₹1500</item>
+        <item>₹1501 - ₹2000</item>
+        <item>More Than ₹2000</item>
+    </string-array>
+
+</resources>

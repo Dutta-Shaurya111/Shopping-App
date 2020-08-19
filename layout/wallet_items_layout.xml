@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginEnd="1dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textAlignment="center"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtAmount"
+            android:gravity="center_horizontal"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ProductId"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtNote"
+            android:gravity="center_horizontal"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtReceiverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receiver Name"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtProductId"
+            android:gravity="center_horizontal"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtTransactionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ProductId"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtReceiverName"
+            android:gravity="center_horizontal"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtTransactionId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TransactionId"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtTransactionStatus"
+            android:gravity="center_horizontal"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtUpiId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPI ID"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtTransactionId"
+            android:gravity="center_horizontal"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
